@@ -15,13 +15,9 @@ System.config({
   bundles: {
     "build.js": [
       "src/main.js",
-      "src/bootstrap.js",
-      "npm:lodash-node@3.10.2.js",
-      "npm:lodash-node@3.10.2/modern/index.js",
-      "github:jspm/nodelibs-process@0.1.2.js",
-      "github:jspm/nodelibs-process@0.1.2/index.js",
-      "npm:process@0.11.5.js",
-      "npm:process@0.11.5/browser.js"
+      "github:angular/bower-angular@1.5.7.js",
+      "github:angular/bower-angular@1.5.7/angular.js",
+      "src/app.js"
     ]
   },
 
