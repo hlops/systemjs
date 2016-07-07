@@ -1,0 +1,1091 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jspm-dev-server',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose install initial load of /home/akarnachuk/projects/arammeem/systemjs/package.json
+5 warn package.json @ No description
+6 warn package.json @ No repository field.
+7 warn package.json @ No README data
+8 warn package.json @ No license field.
+9 verbose readDependencies loading dependencies from /home/akarnachuk/projects/arammeem/systemjs/package.json
+10 silly cache add args [ 'jspm-dev-server', null ]
+11 verbose cache add spec jspm-dev-server
+12 silly cache add parsed spec { raw: 'jspm-dev-server',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'jspm-dev-server',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed jspm-dev-server@*
+14 verbose addNamed "*" is a valid semver range for jspm-dev-server
+15 silly addNameRange { name: 'jspm-dev-server', range: '*', hasData: false }
+16 silly mapToRegistry name jspm-dev-server
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/jspm-dev-server
+20 verbose addNameRange registry:https://registry.npmjs.org/jspm-dev-server not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/jspm-dev-server
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 19:39:12
+24 verbose request id c0ae0c9dfcebe4a6
+25 http request GET https://registry.npmjs.org/jspm-dev-server
+26 http 200 https://registry.npmjs.org/jspm-dev-server
+27 silly get cb [ 200,
+27 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+27 silly get     etag: '"8BNO441N586L11EF3REIDAEFR"',
+27 silly get     'content-type': 'application/json',
+27 silly get     'content-encoding': 'gzip',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'content-length': '2967',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Thu, 07 Jul 2016 13:39:12 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-bma7033-BMA',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1467898751.896929,VS0,VE123',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose get saving jspm-dev-server to /home/akarnachuk/.npm/registry.npmjs.org/jspm-dev-server/.cache.json
+29 silly addNameRange number 2 { name: 'jspm-dev-server', range: '*', hasData: true }
+30 silly addNameRange versions [ 'jspm-dev-server',
+30 silly addNameRange   [ '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1' ] ]
+31 silly addNamed jspm-dev-server@0.4.1
+32 verbose addNamed "0.4.1" is a plain semver version for jspm-dev-server
+33 silly mapToRegistry name jspm-dev-server
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/jspm-dev-server
+37 verbose addRemoteTarball https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz not in flight; adding
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz',
+38 verbose addRemoteTarball   'c83505531731aef665e7e8600a0afe9bac5e4d73' ]
+39 info retry fetch attempt 1 at 19:39:13
+40 info attempt registry request try #1 at 19:39:13
+41 http fetch GET https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz
+42 http fetch 200 https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz
+43 silly fetchAndShaCheck shasum c83505531731aef665e7e8600a0afe9bac5e4d73
+44 verbose addTmpTarball /tmp/npm-2822-796fa076/registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz not in flight; adding
+45 verbose addTmpTarball already have metadata; skipping unpack for jspm-dev-server@0.4.1
+46 silly cache afterAdd jspm-dev-server@0.4.1
+47 verbose afterAdd /home/akarnachuk/.npm/jspm-dev-server/0.4.1/package/package.json not in flight; writing
+48 verbose afterAdd /home/akarnachuk/.npm/jspm-dev-server/0.4.1/package/package.json written
+49 silly install resolved [ { name: 'jspm-dev-server',
+49 silly install resolved     version: '0.4.1',
+49 silly install resolved     description: 'HTTP/2 server for JSPM development.',
+49 silly install resolved     main: 'index.js',
+49 silly install resolved     bin: { 'jspm-dev-server': './bin/jspm-dev-server' },
+49 silly install resolved     scripts:
+49 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+49 silly install resolved        start: 'node bin/jspm-dev-server' },
+49 silly install resolved     repository:
+49 silly install resolved      { type: 'git',
+49 silly install resolved        url: 'git+ssh://git@github.com/mikz/jspm-dev-server.git' },
+49 silly install resolved     keywords: [ 'jspm', 'http2' ],
+49 silly install resolved     author: { name: 'Michal Cichra' },
+49 silly install resolved     license: 'MIT',
+49 silly install resolved     bugs: { url: 'https://github.com/mikz/jspm-dev-server/issues' },
+49 silly install resolved     homepage: 'https://github.com/mikz/jspm-dev-server#readme',
+49 silly install resolved     dependencies:
+49 silly install resolved      { 'chokidar-socket-emitter': '^0.5.0',
+49 silly install resolved        finalhandler: '^0.4.1',
+49 silly install resolved        'http-proxy': '^1.13.0',
+49 silly install resolved        'serve-static': '^1.10.2',
+49 silly install resolved        spdy: '^3.2.0',
+49 silly install resolved        jspm: '^0.17.0-beta.17' },
+49 silly install resolved     devDependencies: { jspm: '^0.17.0-beta.17' },
+49 silly install resolved     jspm:
+49 silly install resolved      { name: 'jspm-dev-server',
+49 silly install resolved        dependencies: [Object],
+49 silly install resolved        devDependencies: [Object],
+49 silly install resolved        peerDependencies: [Object] },
+49 silly install resolved     gitHead: '01eb103eccdce3138ed9a4115c299e0f0e1b796e',
+49 silly install resolved     _id: 'jspm-dev-server@0.4.1',
+49 silly install resolved     _shasum: 'c83505531731aef665e7e8600a0afe9bac5e4d73',
+49 silly install resolved     _from: 'jspm-dev-server@*',
+49 silly install resolved     _npmVersion: '3.9.3',
+49 silly install resolved     _nodeVersion: '6.2.0',
+49 silly install resolved     _npmUser: { name: 'mikz', email: 'michal@cichra.cz' },
+49 silly install resolved     dist:
+49 silly install resolved      { shasum: 'c83505531731aef665e7e8600a0afe9bac5e4d73',
+49 silly install resolved        tarball: 'https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz' },
+49 silly install resolved     maintainers: [ [Object] ],
+49 silly install resolved     _npmOperationalInternal:
+49 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+49 silly install resolved        tmp: 'tmp/jspm-dev-server-0.4.1.tgz_1465113517235_0.006087140645831823' },
+49 silly install resolved     directories: {},
+49 silly install resolved     _resolved: 'https://registry.npmjs.org/jspm-dev-server/-/jspm-dev-server-0.4.1.tgz' } ]
+50 info install jspm-dev-server@0.4.1 into /home/akarnachuk/projects/arammeem/systemjs
+51 info installOne jspm-dev-server@0.4.1
+52 verbose installOne of jspm-dev-server to /home/akarnachuk/projects/arammeem/systemjs not in flight; installing
+53 verbose lock using /home/akarnachuk/.npm/_locks/jspm-dev-server-fc740c63d3d47a98.lock for /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+54 silly install write writing jspm-dev-server 0.4.1 to /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+55 verbose unbuild node_modules/jspm-dev-server
+56 silly gentlyRm /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server is being purged from base /home/akarnachuk/projects/arammeem/systemjs
+57 verbose gentlyRm don't care about contents; nuking /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+58 verbose tar unpack /home/akarnachuk/.npm/jspm-dev-server/0.4.1/package.tgz
+59 verbose tar unpacking to /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+60 silly gentlyRm /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server is being purged
+61 verbose gentlyRm don't care about contents; nuking /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+62 silly gunzTarPerm modes [ '775', '664' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+65 silly gunzTarPerm extractEntry .npmignore
+66 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+67 silly gunzTarPerm extractEntry README.md
+68 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+69 silly gunzTarPerm extractEntry index.js
+70 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+71 silly gunzTarPerm extractEntry jspm.browser.js
+72 silly gunzTarPerm modified mode [ 'jspm.browser.js', 420, 436 ]
+73 silly gunzTarPerm extractEntry jspm.config.js
+74 silly gunzTarPerm modified mode [ 'jspm.config.js', 420, 436 ]
+75 silly gunzTarPerm extractEntry foo
+76 silly gunzTarPerm modified mode [ 'foo', 420, 436 ]
+77 silly gunzTarPerm extractEntry index.html
+78 silly gunzTarPerm modified mode [ 'index.html', 420, 436 ]
+79 silly gunzTarPerm extractEntry .idea/.name
+80 silly gunzTarPerm modified mode [ '.idea/.name', 420, 436 ]
+81 silly gunzTarPerm extractEntry .idea/encodings.xml
+82 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 420, 436 ]
+83 silly gunzTarPerm extractEntry .idea/inspectionProfiles/Project_Default.xml
+84 silly gunzTarPerm modified mode [ '.idea/inspectionProfiles/Project_Default.xml', 420, 436 ]
+85 silly gunzTarPerm extractEntry .idea/inspectionProfiles/profiles_settings.xml
+86 silly gunzTarPerm modified mode [ '.idea/inspectionProfiles/profiles_settings.xml', 420, 436 ]
+87 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+88 silly gunzTarPerm modified mode [ '.idea/jsLibraryMappings.xml', 420, 436 ]
+89 silly gunzTarPerm extractEntry .idea/jspm-dev-server.iml
+90 silly gunzTarPerm modified mode [ '.idea/jspm-dev-server.iml', 420, 436 ]
+91 silly gunzTarPerm extractEntry .idea/libraries/jspm_dev_server_node_modules.xml
+92 silly gunzTarPerm modified mode [ '.idea/libraries/jspm_dev_server_node_modules.xml', 420, 436 ]
+93 silly gunzTarPerm extractEntry .idea/misc.xml
+94 silly gunzTarPerm modified mode [ '.idea/misc.xml', 420, 436 ]
+95 silly gunzTarPerm extractEntry .idea/modules.xml
+96 silly gunzTarPerm modified mode [ '.idea/modules.xml', 420, 436 ]
+97 silly gunzTarPerm extractEntry .idea/vcs.xml
+98 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 420, 436 ]
+99 silly gunzTarPerm extractEntry .idea/workspace.xml
+100 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 420, 436 ]
+101 silly gunzTarPerm extractEntry Makefile
+102 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+103 silly gunzTarPerm extractEntry bin/jspm-dev-server
+104 silly gunzTarPerm modified mode [ 'bin/jspm-dev-server', 493, 509 ]
+105 verbose write writing to /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server/package.json
+106 info preinstall jspm-dev-server@0.4.1
+107 verbose readDependencies loading dependencies from /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server/package.json
+108 silly prepareForInstallMany adding chokidar-socket-emitter@^0.5.0 from jspm-dev-server dependencies
+109 silly prepareForInstallMany adding finalhandler@^0.4.1 from jspm-dev-server dependencies
+110 silly prepareForInstallMany adding http-proxy@^1.13.0 from jspm-dev-server dependencies
+111 silly prepareForInstallMany adding serve-static@^1.10.2 from jspm-dev-server dependencies
+112 silly prepareForInstallMany adding spdy@^3.2.0 from jspm-dev-server dependencies
+113 silly prepareForInstallMany adding jspm@^0.17.0-beta.17 from jspm-dev-server dependencies
+114 verbose readDependencies loading dependencies from /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server/package.json
+115 silly cache add args [ 'chokidar-socket-emitter@^0.5.0', null ]
+116 verbose cache add spec chokidar-socket-emitter@^0.5.0
+117 silly cache add args [ 'finalhandler@^0.4.1', null ]
+118 verbose cache add spec finalhandler@^0.4.1
+119 silly cache add parsed spec { raw: 'chokidar-socket-emitter@^0.5.0',
+119 silly cache add   scope: null,
+119 silly cache add   name: 'chokidar-socket-emitter',
+119 silly cache add   rawSpec: '^0.5.0',
+119 silly cache add   spec: '>=0.5.0 <0.6.0',
+119 silly cache add   type: 'range' }
+120 silly addNamed chokidar-socket-emitter@>=0.5.0 <0.6.0
+121 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for chokidar-socket-emitter
+122 silly addNameRange { name: 'chokidar-socket-emitter',
+122 silly addNameRange   range: '>=0.5.0 <0.6.0',
+122 silly addNameRange   hasData: false }
+123 silly mapToRegistry name chokidar-socket-emitter
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry uri https://registry.npmjs.org/chokidar-socket-emitter
+127 verbose addNameRange registry:https://registry.npmjs.org/chokidar-socket-emitter not in flight; fetching
+128 silly cache add parsed spec { raw: 'finalhandler@^0.4.1',
+128 silly cache add   scope: null,
+128 silly cache add   name: 'finalhandler',
+128 silly cache add   rawSpec: '^0.4.1',
+128 silly cache add   spec: '>=0.4.1 <0.5.0',
+128 silly cache add   type: 'range' }
+129 silly addNamed finalhandler@>=0.4.1 <0.5.0
+130 verbose addNamed ">=0.4.1 <0.5.0" is a valid semver range for finalhandler
+131 silly addNameRange { name: 'finalhandler', range: '>=0.4.1 <0.5.0', hasData: false }
+132 silly mapToRegistry name finalhandler
+133 silly mapToRegistry using default registry
+134 silly mapToRegistry registry https://registry.npmjs.org/
+135 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+136 verbose addNameRange registry:https://registry.npmjs.org/finalhandler not in flight; fetching
+137 silly cache add args [ 'http-proxy@^1.13.0', null ]
+138 verbose cache add spec http-proxy@^1.13.0
+139 silly cache add parsed spec { raw: 'http-proxy@^1.13.0',
+139 silly cache add   scope: null,
+139 silly cache add   name: 'http-proxy',
+139 silly cache add   rawSpec: '^1.13.0',
+139 silly cache add   spec: '>=1.13.0 <2.0.0',
+139 silly cache add   type: 'range' }
+140 silly addNamed http-proxy@>=1.13.0 <2.0.0
+141 verbose addNamed ">=1.13.0 <2.0.0" is a valid semver range for http-proxy
+142 silly addNameRange { name: 'http-proxy', range: '>=1.13.0 <2.0.0', hasData: false }
+143 silly mapToRegistry name http-proxy
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/http-proxy
+147 verbose addNameRange registry:https://registry.npmjs.org/http-proxy not in flight; fetching
+148 silly cache add args [ 'serve-static@^1.10.2', null ]
+149 verbose cache add spec serve-static@^1.10.2
+150 silly cache add parsed spec { raw: 'serve-static@^1.10.2',
+150 silly cache add   scope: null,
+150 silly cache add   name: 'serve-static',
+150 silly cache add   rawSpec: '^1.10.2',
+150 silly cache add   spec: '>=1.10.2 <2.0.0',
+150 silly cache add   type: 'range' }
+151 silly addNamed serve-static@>=1.10.2 <2.0.0
+152 verbose addNamed ">=1.10.2 <2.0.0" is a valid semver range for serve-static
+153 silly addNameRange { name: 'serve-static',
+153 silly addNameRange   range: '>=1.10.2 <2.0.0',
+153 silly addNameRange   hasData: false }
+154 silly mapToRegistry name serve-static
+155 silly mapToRegistry using default registry
+156 silly mapToRegistry registry https://registry.npmjs.org/
+157 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+158 verbose addNameRange registry:https://registry.npmjs.org/serve-static not in flight; fetching
+159 silly cache add args [ 'spdy@^3.2.0', null ]
+160 verbose cache add spec spdy@^3.2.0
+161 silly cache add parsed spec { raw: 'spdy@^3.2.0',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'spdy',
+161 silly cache add   rawSpec: '^3.2.0',
+161 silly cache add   spec: '>=3.2.0 <4.0.0',
+161 silly cache add   type: 'range' }
+162 silly addNamed spdy@>=3.2.0 <4.0.0
+163 verbose addNamed ">=3.2.0 <4.0.0" is a valid semver range for spdy
+164 silly addNameRange { name: 'spdy', range: '>=3.2.0 <4.0.0', hasData: false }
+165 silly mapToRegistry name spdy
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry uri https://registry.npmjs.org/spdy
+169 verbose addNameRange registry:https://registry.npmjs.org/spdy not in flight; fetching
+170 silly cache add args [ 'jspm@^0.17.0-beta.17', null ]
+171 verbose cache add spec jspm@^0.17.0-beta.17
+172 silly cache add parsed spec { raw: 'jspm@^0.17.0-beta.17',
+172 silly cache add   scope: null,
+172 silly cache add   name: 'jspm',
+172 silly cache add   rawSpec: '^0.17.0-beta.17',
+172 silly cache add   spec: '>=0.17.0-beta.17 <0.18.0',
+172 silly cache add   type: 'range' }
+173 silly addNamed jspm@>=0.17.0-beta.17 <0.18.0
+174 verbose addNamed ">=0.17.0-beta.17 <0.18.0" is a valid semver range for jspm
+175 silly addNameRange { name: 'jspm',
+175 silly addNameRange   range: '>=0.17.0-beta.17 <0.18.0',
+175 silly addNameRange   hasData: false }
+176 silly mapToRegistry name jspm
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry uri https://registry.npmjs.org/jspm
+180 verbose addNameRange registry:https://registry.npmjs.org/jspm not in flight; fetching
+181 verbose request uri https://registry.npmjs.org/chokidar-socket-emitter
+182 verbose request no auth needed
+183 info attempt registry request try #1 at 19:39:14
+184 http request GET https://registry.npmjs.org/chokidar-socket-emitter
+185 verbose request uri https://registry.npmjs.org/spdy
+186 verbose request no auth needed
+187 info attempt registry request try #1 at 19:39:14
+188 http request GET https://registry.npmjs.org/spdy
+189 verbose request uri https://registry.npmjs.org/jspm
+190 verbose request no auth needed
+191 info attempt registry request try #1 at 19:39:14
+192 verbose etag "AEX25Y3V3O3S0K2GY2DX53AXW"
+193 http request GET https://registry.npmjs.org/jspm
+194 verbose request uri https://registry.npmjs.org/finalhandler
+195 verbose request no auth needed
+196 info attempt registry request try #1 at 19:39:14
+197 verbose etag "BCGVYG1M9PORKMDHM8SMVVYI4"
+198 http request GET https://registry.npmjs.org/finalhandler
+199 verbose request uri https://registry.npmjs.org/serve-static
+200 verbose request no auth needed
+201 info attempt registry request try #1 at 19:39:14
+202 verbose etag "28A7D7DBG4T1C3FB613ZG48IY"
+203 http request GET https://registry.npmjs.org/serve-static
+204 verbose request uri https://registry.npmjs.org/http-proxy
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 19:39:14
+207 verbose etag "9B6BNRB20L3MKHGREE4I3KU9M"
+208 http request GET https://registry.npmjs.org/http-proxy
+209 http 304 https://registry.npmjs.org/jspm
+210 silly get cb [ 304,
+210 silly get   { date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+210 silly get     via: '1.1 varnish',
+210 silly get     'cache-control': 'max-age=300',
+210 silly get     etag: '"AEX25Y3V3O3S0K2GY2DX53AXW"',
+210 silly get     age: '42',
+210 silly get     connection: 'keep-alive',
+210 silly get     'x-served-by': 'cache-bma7026-BMA',
+210 silly get     'x-cache': 'HIT',
+210 silly get     'x-cache-hits': '1',
+210 silly get     'x-timer': 'S1467898753.135798,VS0,VE0',
+210 silly get     vary: 'Accept-Encoding' } ]
+211 verbose etag https://registry.npmjs.org/jspm from cache
+212 verbose get saving jspm to /home/akarnachuk/.npm/registry.npmjs.org/jspm/.cache.json
+213 http 304 https://registry.npmjs.org/finalhandler
+214 silly get cb [ 304,
+214 silly get   { date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+214 silly get     via: '1.1 varnish',
+214 silly get     'cache-control': 'max-age=300',
+214 silly get     etag: '"BCGVYG1M9PORKMDHM8SMVVYI4"',
+214 silly get     age: '193',
+214 silly get     connection: 'keep-alive',
+214 silly get     'x-served-by': 'cache-bma7021-BMA',
+214 silly get     'x-cache': 'HIT',
+214 silly get     'x-cache-hits': '75',
+214 silly get     'x-timer': 'S1467898753.154437,VS0,VE0',
+214 silly get     vary: 'Accept-Encoding' } ]
+215 verbose etag https://registry.npmjs.org/finalhandler from cache
+216 verbose get saving finalhandler to /home/akarnachuk/.npm/registry.npmjs.org/finalhandler/.cache.json
+217 silly addNameRange number 2 { name: 'jspm',
+217 silly addNameRange   range: '>=0.17.0-beta.17 <0.18.0',
+217 silly addNameRange   hasData: true }
+218 silly addNameRange versions [ 'jspm',
+218 silly addNameRange   [ '0.0.1',
+218 silly addNameRange     '0.0.2',
+218 silly addNameRange     '0.0.3',
+218 silly addNameRange     '0.0.4',
+218 silly addNameRange     '0.0.5',
+218 silly addNameRange     '0.0.6',
+218 silly addNameRange     '0.0.7',
+218 silly addNameRange     '0.0.8',
+218 silly addNameRange     '0.1.0',
+218 silly addNameRange     '0.1.1',
+218 silly addNameRange     '0.2.0',
+218 silly addNameRange     '0.3.0',
+218 silly addNameRange     '0.3.1',
+218 silly addNameRange     '0.3.2',
+218 silly addNameRange     '0.3.3',
+218 silly addNameRange     '0.3.4',
+218 silly addNameRange     '0.3.5',
+218 silly addNameRange     '0.3.6',
+218 silly addNameRange     '0.3.7',
+218 silly addNameRange     '0.3.8',
+218 silly addNameRange     '0.3.9',
+218 silly addNameRange     '0.3.10',
+218 silly addNameRange     '0.4.0',
+218 silly addNameRange     '0.4.1',
+218 silly addNameRange     '0.4.2',
+218 silly addNameRange     '0.4.3',
+218 silly addNameRange     '0.5.0-beta',
+218 silly addNameRange     '0.5.0',
+218 silly addNameRange     '0.5.1',
+218 silly addNameRange     '0.5.2',
+218 silly addNameRange     '0.5.3',
+218 silly addNameRange     '0.5.4',
+218 silly addNameRange     '0.5.5',
+218 silly addNameRange     '0.5.6',
+218 silly addNameRange     '0.5.7',
+218 silly addNameRange     '0.5.8',
+218 silly addNameRange     '0.5.9',
+218 silly addNameRange     '0.5.10',
+218 silly addNameRange     '0.5.11',
+218 silly addNameRange     '0.5.12',
+218 silly addNameRange     '0.5.13',
+218 silly addNameRange     '0.5.14',
+218 silly addNameRange     '0.5.15',
+218 silly addNameRange     '0.5.16',
+218 silly addNameRange     '0.6.0',
+218 silly addNameRange     '0.6.1',
+218 silly addNameRange     '0.6.2',
+218 silly addNameRange     '0.6.3',
+218 silly addNameRange     '0.6.4',
+218 silly addNameRange     '0.6.5',
+218 silly addNameRange     '0.6.6',
+218 silly addNameRange     '0.6.7',
+218 silly addNameRange     '0.6.8',
+218 silly addNameRange     '0.6.9',
+218 silly addNameRange     '0.6.10',
+218 silly addNameRange     '0.6.11',
+218 silly addNameRange     '0.6.12',
+218 silly addNameRange     '0.7.0-beta.1',
+218 silly addNameRange     '0.7.0-beta.2',
+218 silly addNameRange     '0.7.0-beta.3',
+218 silly addNameRange     '0.7.0-beta.4',
+218 silly addNameRange     '0.7.0-beta.5',
+218 silly addNameRange     '0.7.0-beta.6',
+218 silly addNameRange     '0.7.0-beta.7',
+218 silly addNameRange     '0.7.0-beta.8',
+218 silly addNameRange     '0.7.0-beta.9',
+218 silly addNameRange     '0.7.0-beta.10',
+218 silly addNameRange     '0.6.13',
+218 silly addNameRange     '0.7.0-beta.11',
+218 silly addNameRange     '0.7.0-beta.12',
+218 silly addNameRange     '0.7.0-beta.13',
+218 silly addNameRange     '0.7.0-beta.14',
+218 silly addNameRange     '0.7.0-beta.15',
+218 silly addNameRange     '0.7.0-beta.16',
+218 silly addNameRange     '0.7.0-beta.17',
+218 silly addNameRange     '0.7.0-beta.18',
+218 silly addNameRange     '0.7.0-beta.19',
+218 silly addNameRange     '0.7.0-beta.20',
+218 silly addNameRange     '0.7.0',
+218 silly addNameRange     '0.7.1',
+218 silly addNameRange     '0.8.0-beta.1',
+218 silly addNameRange     '0.8.0-beta.2',
+218 silly addNameRange     '0.8.0-beta.3',
+218 silly addNameRange     '0.8.0-beta.4',
+218 silly addNameRange     '0.7.2',
+218 silly addNameRange     '0.8.0-beta.5',
+218 silly addNameRange     '0.8.0-beta.6',
+218 silly addNameRange     '0.7.3',
+218 silly addNameRange     '0.8.0-beta.7',
+218 silly addNameRange     '0.8.0-beta.8',
+218 silly addNameRange     '0.8.0-beta.9',
+218 silly addNameRange     '0.8.0-beta.10',
+218 silly addNameRange     '0.8.0-beta.11',
+218 silly addNameRange     '0.8.0-beta.12',
+218 silly addNameRange     '0.8.0',
+218 silly addNameRange     '0.8.1',
+218 silly addNameRange     '0.8.2',
+218 silly addNameRange     '0.8.3',
+218 silly addNameRange     '0.8.4',
+218 silly addNameRange     '0.9.0-beta.1',
+218 silly addNameRange     '0.8.5',
+218 silly addNameRange     '0.9.0-beta.2',
+218 silly addNameRange     '0.8.6',
+218 silly addNameRange     '0.9.0',
+218 silly addNameRange     '0.10.0',
+218 silly addNameRange     '0.10.1',
+218 silly addNameRange     '0.10.2',
+218 silly addNameRange     '0.10.3',
+218 silly addNameRange     '0.10.4',
+218 silly addNameRange     '0.10.5',
+218 silly addNameRange     '0.10.6',
+218 silly addNameRange     '0.11.0',
+218 silly addNameRange     '0.11.1',
+218 silly addNameRange     '0.11.2',
+218 silly addNameRange     '0.11.3',
+218 silly addNameRange     '0.11.4',
+218 silly addNameRange     '0.11.5',
+218 silly addNameRange     '0.11.6',
+218 silly addNameRange     '0.12.0',
+218 silly addNameRange     '0.13.0',
+218 silly addNameRange     '0.13.1',
+218 silly addNameRange     '0.13.2',
+218 silly addNameRange     '0.13.3',
+218 silly addNameRange     '0.13.4',
+218 silly addNameRange     '0.14.0',
+218 silly addNameRange     '0.15.0-beta',
+218 silly addNameRange     '0.15.0',
+218 silly addNameRange     '0.15.1',
+218 silly addNameRange     '0.15.2',
+218 silly addNameRange     '0.15.3',
+218 silly addNameRange     '0.15.4',
+218 silly addNameRange     '0.15.5',
+218 silly addNameRange     '0.15.6',
+218 silly addNameRange     '0.16.0-beta',
+218 silly addNameRange     '0.15.7',
+218 silly addNameRange     '0.16.0-beta.2',
+218 silly addNameRange     '0.16.0-beta.3',
+218 silly addNameRange     '0.16.0-beta.4',
+218 silly addNameRange     '0.16.0-beta.5',
+218 silly addNameRange     '0.16.0-beta.6',
+218 silly addNameRange     '0.16.0-beta.7',
+218 silly addNameRange     '0.16.0',
+218 silly addNameRange     '0.16.1',
+218 silly addNameRange     '0.16.2',
+218 silly addNameRange     '0.16.3',
+218 silly addNameRange     '0.16.4',
+218 silly addNameRange     '0.16.5',
+218 silly addNameRange     '0.16.6',
+218 silly addNameRange     '0.16.7',
+218 silly addNameRange     '0.16.8',
+218 silly addNameRange     '0.16.9',
+218 silly addNameRange     '0.16.10',
+218 silly addNameRange     '0.16.11',
+218 silly addNameRange     '0.16.12',
+218 silly addNameRange     '0.16.13',
+218 silly addNameRange     '0.16.14',
+218 silly addNameRange     '0.16.15',
+218 silly addNameRange     '0.16.16',
+218 silly addNameRange     '0.16.17',
+218 silly addNameRange     '0.16.18',
+218 silly addNameRange     '0.16.19',
+218 silly addNameRange     '0.16.20',
+218 silly addNameRange     '0.17.0-beta',
+218 silly addNameRange     '0.16.21',
+218 silly addNameRange     '0.16.22',
+218 silly addNameRange     '0.16.23',
+218 silly addNameRange     '0.17.0-beta.2',
+218 silly addNameRange     '0.17.0-beta.3',
+218 silly addNameRange     '0.16.24',
+218 silly addNameRange     '0.16.25',
+218 silly addNameRange     '0.17.0-beta.4',
+218 silly addNameRange     '0.17.0-beta.5',
+218 silly addNameRange     '0.16.26',
+218 silly addNameRange     '0.16.27',
+218 silly addNameRange     '0.17.0-beta.6',
+218 silly addNameRange     '0.16.28',
+218 silly addNameRange     '0.17.0-beta.7',
+218 silly addNameRange     '0.16.29',
+218 silly addNameRange     '0.16.30',
+218 silly addNameRange     '0.17.0-beta.8',
+218 silly addNameRange     '0.17.0-beta.9',
+218 silly addNameRange     '0.17.0-beta.10',
+218 silly addNameRange     '0.16.31',
+218 silly addNameRange     '0.17.0-beta.11',
+218 silly addNameRange     '0.16.32',
+218 silly addNameRange     '0.17.0-beta.12',
+218 silly addNameRange     '0.16.33',
+218 silly addNameRange     '0.17.0-beta.13',
+218 silly addNameRange     '0.16.34',
+218 silly addNameRange     '0.17.0-beta.14',
+218 silly addNameRange     '0.16.35',
+218 silly addNameRange     '0.17.0-beta.15',
+218 silly addNameRange     '0.17.0-beta.16',
+218 silly addNameRange     '0.16.36',
+218 silly addNameRange     '0.17.0-beta.17',
+218 silly addNameRange     '0.16.37',
+218 silly addNameRange     '0.17.0-beta.18',
+218 silly addNameRange     '0.16.38',
+218 silly addNameRange     '0.17.0-beta.19',
+218 silly addNameRange     '0.16.39',
+218 silly addNameRange     '0.17.0-beta.20',
+218 silly addNameRange     '0.17.0-beta.21',
+218 silly addNameRange     '0.17.0-beta.22' ] ]
+219 silly addNamed jspm@0.17.0-beta.22
+220 verbose addNamed "0.17.0-beta.22" is a plain semver version for jspm
+221 http 304 https://registry.npmjs.org/serve-static
+222 silly get cb [ 304,
+222 silly get   { date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+222 silly get     via: '1.1 varnish',
+222 silly get     'cache-control': 'max-age=300',
+222 silly get     etag: '"28A7D7DBG4T1C3FB613ZG48IY"',
+222 silly get     age: '137',
+222 silly get     connection: 'keep-alive',
+222 silly get     'x-served-by': 'cache-bma7021-BMA',
+222 silly get     'x-cache': 'HIT',
+222 silly get     'x-cache-hits': '127',
+222 silly get     'x-timer': 'S1467898753.162222,VS0,VE0',
+222 silly get     vary: 'Accept-Encoding' } ]
+223 verbose etag https://registry.npmjs.org/serve-static from cache
+224 verbose get saving serve-static to /home/akarnachuk/.npm/registry.npmjs.org/serve-static/.cache.json
+225 http 304 https://registry.npmjs.org/http-proxy
+226 silly get cb [ 304,
+226 silly get   { date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+226 silly get     via: '1.1 varnish',
+226 silly get     'cache-control': 'max-age=300',
+226 silly get     etag: '"9B6BNRB20L3MKHGREE4I3KU9M"',
+226 silly get     age: '247',
+226 silly get     connection: 'keep-alive',
+226 silly get     'x-served-by': 'cache-bma7035-BMA',
+226 silly get     'x-cache': 'HIT',
+226 silly get     'x-cache-hits': '3',
+226 silly get     'x-timer': 'S1467898753.185882,VS0,VE0',
+226 silly get     vary: 'Accept-Encoding' } ]
+227 verbose etag https://registry.npmjs.org/http-proxy from cache
+228 verbose get saving http-proxy to /home/akarnachuk/.npm/registry.npmjs.org/http-proxy/.cache.json
+229 http 200 https://registry.npmjs.org/chokidar-socket-emitter
+230 silly get cb [ 200,
+230 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+230 silly get     etag: '"DL0OKVJ1R52BTXF9YDN24VHXH"',
+230 silly get     'content-type': 'application/json',
+230 silly get     'content-encoding': 'gzip',
+230 silly get     'cache-control': 'max-age=300',
+230 silly get     'content-length': '3339',
+230 silly get     'accept-ranges': 'bytes',
+230 silly get     date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+230 silly get     via: '1.1 varnish',
+230 silly get     age: '0',
+230 silly get     connection: 'keep-alive',
+230 silly get     'x-served-by': 'cache-bma7031-BMA',
+230 silly get     'x-cache': 'MISS',
+230 silly get     'x-cache-hits': '0',
+230 silly get     'x-timer': 'S1467898753.086626,VS0,VE115',
+230 silly get     vary: 'Accept-Encoding' } ]
+231 verbose get saving chokidar-socket-emitter to /home/akarnachuk/.npm/registry.npmjs.org/chokidar-socket-emitter/.cache.json
+232 silly mapToRegistry name jspm
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/jspm
+236 verbose addRemoteTarball https://registry.npmjs.org/jspm/-/jspm-0.17.0-beta.22.tgz not in flight; adding
+237 verbose addRemoteTarball [ 'https://registry.npmjs.org/jspm/-/jspm-0.17.0-beta.22.tgz',
+237 verbose addRemoteTarball   'eb3558299502749f34bbdbd5875d8e8ad06f1e53' ]
+238 silly addNameRange number 2 { name: 'finalhandler', range: '>=0.4.1 <0.5.0', hasData: true }
+239 silly addNameRange versions [ 'finalhandler',
+239 silly addNameRange   [ '0.0.0',
+239 silly addNameRange     '0.0.1',
+239 silly addNameRange     '0.0.2',
+239 silly addNameRange     '0.0.3',
+239 silly addNameRange     '0.1.0',
+239 silly addNameRange     '0.2.0',
+239 silly addNameRange     '0.3.0',
+239 silly addNameRange     '0.3.1',
+239 silly addNameRange     '0.3.2',
+239 silly addNameRange     '0.3.3',
+239 silly addNameRange     '0.3.4',
+239 silly addNameRange     '0.3.5',
+239 silly addNameRange     '0.3.6',
+239 silly addNameRange     '0.4.0',
+239 silly addNameRange     '0.4.1',
+239 silly addNameRange     '0.5.0' ] ]
+240 silly addNamed finalhandler@0.4.1
+241 verbose addNamed "0.4.1" is a plain semver version for finalhandler
+242 info retry fetch attempt 1 at 19:39:14
+243 info attempt registry request try #1 at 19:39:14
+244 http fetch GET https://registry.npmjs.org/jspm/-/jspm-0.17.0-beta.22.tgz
+245 silly addNameRange number 2 { name: 'serve-static', range: '>=1.10.2 <2.0.0', hasData: true }
+246 silly addNameRange versions [ 'serve-static',
+246 silly addNameRange   [ '1.0.0',
+246 silly addNameRange     '1.0.1',
+246 silly addNameRange     '1.0.2',
+246 silly addNameRange     '1.0.3',
+246 silly addNameRange     '1.0.4',
+246 silly addNameRange     '1.1.0',
+246 silly addNameRange     '1.2.0',
+246 silly addNameRange     '1.2.1',
+246 silly addNameRange     '1.2.2',
+246 silly addNameRange     '1.2.3',
+246 silly addNameRange     '1.3.0',
+246 silly addNameRange     '1.3.1',
+246 silly addNameRange     '1.3.2',
+246 silly addNameRange     '1.4.0',
+246 silly addNameRange     '1.4.1',
+246 silly addNameRange     '1.4.2',
+246 silly addNameRange     '1.4.3',
+246 silly addNameRange     '1.4.4',
+246 silly addNameRange     '1.5.0',
+246 silly addNameRange     '1.5.1',
+246 silly addNameRange     '1.5.2',
+246 silly addNameRange     '1.5.3',
+246 silly addNameRange     '1.5.4',
+246 silly addNameRange     '1.6.0',
+246 silly addNameRange     '1.6.1',
+246 silly addNameRange     '1.6.2',
+246 silly addNameRange     '1.6.3',
+246 silly addNameRange     '1.6.4',
+246 silly addNameRange     '1.7.0',
+246 silly addNameRange     '1.7.1',
+246 silly addNameRange     '1.7.2',
+246 silly addNameRange     '1.8.0',
+246 silly addNameRange     '1.8.1',
+246 silly addNameRange     '1.6.5',
+246 silly addNameRange     '1.9.0',
+246 silly addNameRange     '1.9.1',
+246 silly addNameRange     '1.9.2',
+246 silly addNameRange     '1.9.3',
+246 silly addNameRange     '1.10.0',
+246 silly addNameRange     '1.10.1',
+246 silly addNameRange     '1.10.2',
+246 silly addNameRange     '1.10.3',
+246 silly addNameRange     '1.11.0',
+246 silly addNameRange     '1.11.1' ] ]
+247 silly addNamed serve-static@1.11.1
+248 verbose addNamed "1.11.1" is a plain semver version for serve-static
+249 http 200 https://registry.npmjs.org/spdy
+250 silly get cb [ 200,
+250 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+250 silly get     etag: '"CAE1S7JFWUZS3QUN0DNVM63WR"',
+250 silly get     'content-type': 'application/json',
+250 silly get     'content-encoding': 'gzip',
+250 silly get     'cache-control': 'max-age=300',
+250 silly get     'content-length': '25075',
+250 silly get     'accept-ranges': 'bytes',
+250 silly get     date: 'Thu, 07 Jul 2016 13:39:13 GMT',
+250 silly get     via: '1.1 varnish',
+250 silly get     age: '165',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-served-by': 'cache-bma7023-BMA',
+250 silly get     'x-cache': 'HIT',
+250 silly get     'x-cache-hits': '3',
+250 silly get     'x-timer': 'S1467898753.096733,VS0,VE0',
+250 silly get     vary: 'Accept-Encoding' } ]
+251 verbose get saving spdy to /home/akarnachuk/.npm/registry.npmjs.org/spdy/.cache.json
+252 silly mapToRegistry name serve-static
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+256 verbose addRemoteTarball https://registry.npmjs.org/serve-static/-/serve-static-1.11.1.tgz not in flight; adding
+257 verbose addRemoteTarball [ 'https://registry.npmjs.org/serve-static/-/serve-static-1.11.1.tgz',
+257 verbose addRemoteTarball   'd6cce7693505f733c759de57befc1af76c0f0805' ]
+258 silly addNameRange number 2 { name: 'http-proxy', range: '>=1.13.0 <2.0.0', hasData: true }
+259 silly addNameRange versions [ 'http-proxy',
+259 silly addNameRange   [ '0.5.9',
+259 silly addNameRange     '0.5.10',
+259 silly addNameRange     '0.5.11',
+259 silly addNameRange     '0.6.0',
+259 silly addNameRange     '0.6.1',
+259 silly addNameRange     '0.6.2',
+259 silly addNameRange     '0.6.4',
+259 silly addNameRange     '0.6.5',
+259 silly addNameRange     '0.6.6',
+259 silly addNameRange     '0.7.0',
+259 silly addNameRange     '0.7.2',
+259 silly addNameRange     '0.7.3',
+259 silly addNameRange     '0.7.4',
+259 silly addNameRange     '0.7.5',
+259 silly addNameRange     '0.7.6',
+259 silly addNameRange     '0.8.0',
+259 silly addNameRange     '0.8.1',
+259 silly addNameRange     '0.8.2',
+259 silly addNameRange     '0.8.3',
+259 silly addNameRange     '0.8.4',
+259 silly addNameRange     '0.8.5',
+259 silly addNameRange     '0.8.6',
+259 silly addNameRange     '0.8.7',
+259 silly addNameRange     '0.9.0',
+259 silly addNameRange     '0.9.1',
+259 silly addNameRange     '0.10.0',
+259 silly addNameRange     '0.10.1',
+259 silly addNameRange     '0.10.2',
+259 silly addNameRange     '0.10.3',
+259 silly addNameRange     '0.10.4',
+259 silly addNameRange     '1.0.0',
+259 silly addNameRange     '1.0.1',
+259 silly addNameRange     '1.0.2',
+259 silly addNameRange     '1.0.3',
+259 silly addNameRange     '1.1.0',
+259 silly addNameRange     '1.1.1',
+259 silly addNameRange     '1.1.2',
+259 silly addNameRange     '1.1.3',
+259 silly addNameRange     '1.1.4',
+259 silly addNameRange     '1.1.5',
+259 silly addNameRange     '1.1.6',
+259 silly addNameRange     '1.2.0',
+259 silly addNameRange     '1.2.1',
+259 silly addNameRange     '1.3.0',
+259 silly addNameRange     '1.4.0',
+259 silly addNameRange     '1.4.1',
+259 silly addNameRange     '1.4.2',
+259 silly addNameRange     '1.4.3',
+259 silly addNameRange     '1.5.0',
+259 silly addNameRange     '1.5.1',
+259 silly addNameRange     '1.5.2',
+259 silly addNameRange     '1.5.3',
+259 silly addNameRange     '1.6.0',
+259 silly addNameRange     '1.6.1',
+259 silly addNameRange     '1.6.2',
+259 silly addNameRange     '1.7.0',
+259 silly addNameRange     '1.7.1',
+259 silly addNameRange     '1.7.2',
+259 silly addNameRange     '1.7.3',
+259 silly addNameRange     '1.8.0',
+259 silly addNameRange     '1.8.1',
+259 silly addNameRange     '1.9.0',
+259 silly addNameRange     '1.9.1',
+259 silly addNameRange     '1.10.0',
+259 silly addNameRange     '1.10.1',
+259 silly addNameRange     '1.11.0',
+259 silly addNameRange     '1.11.1',
+259 silly addNameRange     '1.11.2',
+259 silly addNameRange     '1.11.3',
+259 silly addNameRange     '1.12.0',
+259 silly addNameRange     '1.12.1',
+259 silly addNameRange     '1.13.0',
+259 silly addNameRange     '1.13.1',
+259 silly addNameRange     '1.13.2',
+259 silly addNameRange     '1.13.3',
+259 silly addNameRange     '1.14.0' ] ]
+260 silly addNamed http-proxy@1.14.0
+261 verbose addNamed "1.14.0" is a plain semver version for http-proxy
+262 silly addNameRange number 2 { name: 'chokidar-socket-emitter',
+262 silly addNameRange   range: '>=0.5.0 <0.6.0',
+262 silly addNameRange   hasData: true }
+263 silly addNameRange versions [ 'chokidar-socket-emitter',
+263 silly addNameRange   [ '0.0.1',
+263 silly addNameRange     '0.0.2',
+263 silly addNameRange     '0.1.0',
+263 silly addNameRange     '0.1.1',
+263 silly addNameRange     '0.2.0',
+263 silly addNameRange     '0.2.1',
+263 silly addNameRange     '0.3.0',
+263 silly addNameRange     '0.3.1' ] ]
+264 silly addNameRange number 2 { name: 'spdy', range: '>=3.2.0 <4.0.0', hasData: true }
+265 silly addNameRange versions [ 'spdy',
+265 silly addNameRange   [ '0.0.1',
+265 silly addNameRange     '0.1.0',
+265 silly addNameRange     '0.1.1',
+265 silly addNameRange     '0.1.2',
+265 silly addNameRange     '0.1.4',
+265 silly addNameRange     '1.0.0',
+265 silly addNameRange     '1.1.0',
+265 silly addNameRange     '1.2.0',
+265 silly addNameRange     '1.2.1',
+265 silly addNameRange     '1.3.0',
+265 silly addNameRange     '1.3.1',
+265 silly addNameRange     '1.3.2',
+265 silly addNameRange     '1.3.3',
+265 silly addNameRange     '1.3.4',
+265 silly addNameRange     '1.3.5',
+265 silly addNameRange     '1.3.6',
+265 silly addNameRange     '1.3.7',
+265 silly addNameRange     '1.3.8',
+265 silly addNameRange     '1.3.9',
+265 silly addNameRange     '1.4.0',
+265 silly addNameRange     '1.4.1',
+265 silly addNameRange     '1.4.2',
+265 silly addNameRange     '1.4.3',
+265 silly addNameRange     '1.4.4',
+265 silly addNameRange     '1.4.5',
+265 silly addNameRange     '1.4.6',
+265 silly addNameRange     '1.5.0',
+265 silly addNameRange     '1.6.0',
+265 silly addNameRange     '1.6.1',
+265 silly addNameRange     '1.7.0',
+265 silly addNameRange     '1.7.1',
+265 silly addNameRange     '1.7.2',
+265 silly addNameRange     '1.7.3',
+265 silly addNameRange     '1.7.4',
+265 silly addNameRange     '1.7.5',
+265 silly addNameRange     '1.7.6',
+265 silly addNameRange     '1.8.0',
+265 silly addNameRange     '1.8.1',
+265 silly addNameRange     '1.8.2',
+265 silly addNameRange     '1.8.3',
+265 silly addNameRange     '1.8.4',
+265 silly addNameRange     '1.8.5',
+265 silly addNameRange     '1.8.6',
+265 silly addNameRange     '1.8.7',
+265 silly addNameRange     '1.8.8',
+265 silly addNameRange     '1.8.9',
+265 silly addNameRange     '1.8.10',
+265 silly addNameRange     '1.8.11',
+265 silly addNameRange     '1.8.12',
+265 silly addNameRange     '1.8.13',
+265 silly addNameRange     '1.9.0',
+265 silly addNameRange     '1.9.1',
+265 silly addNameRange     '1.10.0',
+265 silly addNameRange     '1.10.1',
+265 silly addNameRange     '1.10.2',
+265 silly addNameRange     '1.10.3',
+265 silly addNameRange     '1.10.4',
+265 silly addNameRange     '1.10.5',
+265 silly addNameRange     '1.10.6',
+265 silly addNameRange     '1.10.7',
+265 silly addNameRange     '1.10.8',
+265 silly addNameRange     '1.10.9',
+265 silly addNameRange     '1.10.10',
+265 silly addNameRange     '1.10.11',
+265 silly addNameRange     '1.10.12',
+265 silly addNameRange     '1.11.0',
+265 silly addNameRange     '1.12.0',
+265 silly addNameRange     '1.12.1',
+265 silly addNameRange     '1.12.2',
+265 silly addNameRange     '1.12.3',
+265 silly addNameRange     '1.12.4',
+265 silly addNameRange     '1.13.0',
+265 silly addNameRange     '1.13.1',
+265 silly addNameRange     '1.14.0',
+265 silly addNameRange     '1.14.1',
+265 silly addNameRange     '1.14.2',
+265 silly addNameRange     '1.14.3',
+265 silly addNameRange     '1.14.4',
+265 silly addNameRange     '1.14.5',
+265 silly addNameRange     '1.14.6',
+265 silly addNameRange     '1.14.7',
+265 silly addNameRange     '1.14.8',
+265 silly addNameRange     '1.14.9',
+265 silly addNameRange     '1.14.10',
+265 silly addNameRange     '1.14.11',
+265 silly addNameRange     '1.14.12',
+265 silly addNameRange     '1.14.13',
+265 silly addNameRange     '1.14.14',
+265 silly addNameRange     '1.14.15',
+265 silly addNameRange     '1.15.0',
+265 silly addNameRange     '1.15.1',
+265 silly addNameRange     '1.15.2',
+265 silly addNameRange     '1.15.3',
+265 silly addNameRange     '1.15.4',
+265 silly addNameRange     '1.15.5',
+265 silly addNameRange     '1.15.6',
+265 silly addNameRange     '1.15.7',
+265 silly addNameRange     '1.15.8',
+265 silly addNameRange     '1.16.0',
+265 silly addNameRange     '1.16.2',
+265 silly addNameRange     '1.16.3',
+265 silly addNameRange     '1.16.4',
+265 silly addNameRange     '1.16.5',
+265 silly addNameRange     '1.16.6',
+265 silly addNameRange     '1.16.7',
+265 silly addNameRange     '1.16.8',
+265 silly addNameRange     '1.16.9',
+265 silly addNameRange     '1.17.0',
+265 silly addNameRange     '1.17.1',
+265 silly addNameRange     '1.17.5',
+265 silly addNameRange     '1.17.6',
+265 silly addNameRange     '1.17.7',
+265 silly addNameRange     '1.17.8',
+265 silly addNameRange     '1.17.9',
+265 silly addNameRange     '1.17.10',
+265 silly addNameRange     '1.17.11',
+265 silly addNameRange     '1.17.12',
+265 silly addNameRange     '1.17.14',
+265 silly addNameRange     '1.17.15',
+265 silly addNameRange     '1.17.16',
+265 silly addNameRange     '1.17.17',
+265 silly addNameRange     '1.17.18',
+265 silly addNameRange     '1.17.19',
+265 silly addNameRange     '1.17.20',
+265 silly addNameRange     '1.17.21',
+265 silly addNameRange     '1.17.22',
+265 silly addNameRange     '1.17.23',
+265 silly addNameRange     '1.18.0',
+265 silly addNameRange     '1.18.1',
+265 silly addNameRange     '1.19.0',
+265 silly addNameRange     '1.19.1',
+265 silly addNameRange     '1.19.2',
+265 silly addNameRange     '1.19.3',
+265 silly addNameRange     '1.19.4',
+265 silly addNameRange     '1.20.0',
+265 silly addNameRange     '1.22.0',
+265 silly addNameRange     '1.23.0',
+265 silly addNameRange     '1.24.0',
+265 silly addNameRange     '1.25.0',
+265 silly addNameRange     '1.25.1',
+265 silly addNameRange     '1.25.2',
+265 silly addNameRange     '1.25.3',
+265 silly addNameRange     '1.25.4',
+265 silly addNameRange     '1.25.5',
+265 silly addNameRange     '1.25.6',
+265 silly addNameRange     '1.26.0',
+265 silly addNameRange     '1.26.1',
+265 silly addNameRange     '1.26.2',
+265 silly addNameRange     '1.26.3',
+265 silly addNameRange     '1.26.4',
+265 silly addNameRange     '1.26.5',
+265 silly addNameRange     '1.27.0',
+265 silly addNameRange     '1.28.0',
+265 silly addNameRange     '1.28.1',
+265 silly addNameRange     '1.28.2',
+265 silly addNameRange     '1.29.0',
+265 silly addNameRange     '1.29.1',
+265 silly addNameRange     '1.29.2',
+265 silly addNameRange     '1.30.0',
+265 silly addNameRange     '1.30.1',
+265 silly addNameRange     '1.30.2',
+265 silly addNameRange     '1.31.0',
+265 silly addNameRange     '1.32.0',
+265 silly addNameRange     '2.0.0-beta1',
+265 silly addNameRange     '2.0.0-beta2',
+265 silly addNameRange     '2.0.0-beta3',
+265 silly addNameRange     '2.0.0-beta4',
+265 silly addNameRange     '1.32.1',
+265 silly addNameRange     '1.32.2',
+265 silly addNameRange     '1.32.3',
+265 silly addNameRange     '1.32.4',
+265 silly addNameRange     '2.0.0-beta5',
+265 silly addNameRange     '2.0.0-beta6',
+265 silly addNameRange     '2.0.0-rc1',
+265 silly addNameRange     '2.0.0-rc2',
+265 silly addNameRange     '2.0.0-rc3',
+265 silly addNameRange     '2.0.0-rc4',
+265 silly addNameRange     '2.0.0',
+265 silly addNameRange     '2.0.2',
+265 silly addNameRange     '2.0.3',
+265 silly addNameRange     '2.0.4',
+265 silly addNameRange     '2.0.5',
+265 silly addNameRange     '2.1.0',
+265 silly addNameRange     '1.32.5',
+265 silly addNameRange     '3.0.0',
+265 silly addNameRange     '3.0.1',
+265 silly addNameRange     '3.1.0',
+265 silly addNameRange     '3.2.0',
+265 silly addNameRange     '3.2.1',
+265 silly addNameRange     '3.2.2',
+265 silly addNameRange     '3.2.3',
+265 silly addNameRange     '3.2.4',
+265 silly addNameRange     '3.3.1',
+265 silly addNameRange     '3.3.2',
+265 silly addNameRange     '3.3.3' ] ]
+266 silly addNamed spdy@3.3.3
+267 verbose addNamed "3.3.3" is a plain semver version for spdy
+268 silly mapToRegistry name spdy
+269 silly mapToRegistry using default registry
+270 silly mapToRegistry registry https://registry.npmjs.org/
+271 silly mapToRegistry uri https://registry.npmjs.org/spdy
+272 verbose addRemoteTarball https://registry.npmjs.org/spdy/-/spdy-3.3.3.tgz not in flight; adding
+273 verbose addRemoteTarball [ 'https://registry.npmjs.org/spdy/-/spdy-3.3.3.tgz',
+273 verbose addRemoteTarball   'e3df452152e23274075b0eb0f90c00676b6e5411' ]
+274 info retry fetch attempt 1 at 19:39:14
+275 info attempt registry request try #1 at 19:39:14
+276 http fetch GET https://registry.npmjs.org/serve-static/-/serve-static-1.11.1.tgz
+277 info retry fetch attempt 1 at 19:39:14
+278 info attempt registry request try #1 at 19:39:14
+279 http fetch GET https://registry.npmjs.org/spdy/-/spdy-3.3.3.tgz
+280 silly cache afterAdd http-proxy@1.14.0
+281 verbose afterAdd /home/akarnachuk/.npm/http-proxy/1.14.0/package/package.json not in flight; writing
+282 verbose afterAdd /home/akarnachuk/.npm/http-proxy/1.14.0/package/package.json written
+283 silly cache afterAdd finalhandler@0.4.1
+284 verbose afterAdd /home/akarnachuk/.npm/finalhandler/0.4.1/package/package.json not in flight; writing
+285 verbose afterAdd /home/akarnachuk/.npm/finalhandler/0.4.1/package/package.json written
+286 http fetch 200 https://registry.npmjs.org/spdy/-/spdy-3.3.3.tgz
+287 http fetch 200 https://registry.npmjs.org/serve-static/-/serve-static-1.11.1.tgz
+288 silly fetchAndShaCheck shasum d6cce7693505f733c759de57befc1af76c0f0805
+289 verbose addTmpTarball /tmp/npm-2822-796fa076/registry.npmjs.org/serve-static/-/serve-static-1.11.1.tgz not in flight; adding
+290 verbose addTmpTarball already have metadata; skipping unpack for serve-static@1.11.1
+291 silly cache afterAdd serve-static@1.11.1
+292 verbose afterAdd /home/akarnachuk/.npm/serve-static/1.11.1/package/package.json not in flight; writing
+293 verbose afterAdd /home/akarnachuk/.npm/serve-static/1.11.1/package/package.json written
+294 silly fetchAndShaCheck shasum e3df452152e23274075b0eb0f90c00676b6e5411
+295 verbose addTmpTarball /tmp/npm-2822-796fa076/registry.npmjs.org/spdy/-/spdy-3.3.3.tgz not in flight; adding
+296 verbose addTmpTarball already have metadata; skipping unpack for spdy@3.3.3
+297 silly cache afterAdd spdy@3.3.3
+298 verbose afterAdd /home/akarnachuk/.npm/spdy/3.3.3/package/package.json not in flight; writing
+299 verbose afterAdd /home/akarnachuk/.npm/spdy/3.3.3/package/package.json written
+300 http fetch 200 https://registry.npmjs.org/jspm/-/jspm-0.17.0-beta.22.tgz
+301 silly fetchAndShaCheck shasum eb3558299502749f34bbdbd5875d8e8ad06f1e53
+302 verbose addTmpTarball /tmp/npm-2822-796fa076/registry.npmjs.org/jspm/-/jspm-0.17.0-beta.22.tgz not in flight; adding
+303 verbose addTmpTarball already have metadata; skipping unpack for jspm@0.17.0-beta.22
+304 silly cache afterAdd jspm@0.17.0-beta.22
+305 verbose afterAdd /home/akarnachuk/.npm/jspm/0.17.0-beta.22/package/package.json not in flight; writing
+306 verbose afterAdd /home/akarnachuk/.npm/jspm/0.17.0-beta.22/package/package.json written
+307 verbose about to build /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+308 verbose unlock done using /home/akarnachuk/.npm/_locks/jspm-dev-server-fc740c63d3d47a98.lock for /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+309 verbose stack Error: No compatible version found: chokidar-socket-emitter@'>=0.5.0 <0.6.0'
+309 verbose stack Valid install targets:
+309 verbose stack ["0.0.1","0.0.2","0.1.0","0.1.1","0.2.0","0.2.1","0.3.0","0.3.1"]
+309 verbose stack
+309 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:274:12)
+309 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:253:17)
+309 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:230:5)
+309 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+309 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+309 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+309 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+309 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+310 verbose cwd /home/akarnachuk/projects/arammeem/systemjs
+311 error Linux 3.13.0-85-generic
+312 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "jspm-dev-server" "--save-dev"
+313 error node v0.12.5
+314 error npm  v2.11.2
+315 error code ETARGET
+316 error notarget No compatible version found: chokidar-socket-emitter@'>=0.5.0 <0.6.0'
+316 error notarget Valid install targets:
+316 error notarget ["0.0.1","0.0.2","0.1.0","0.1.1","0.2.0","0.2.1","0.3.0","0.3.1"]
+316 error notarget
+316 error notarget This is most likely not a problem with npm itself.
+316 error notarget In most cases you or one of your dependencies are requesting
+316 error notarget a package version that doesn't exist.
+316 error notarget
+316 error notarget It was specified as a dependency of 'jspm-dev-server'
+317 verbose exit [ 1, true ]
+318 verbose unbuild node_modules/jspm-dev-server
+319 info preuninstall jspm-dev-server@0.4.1
+320 info uninstall jspm-dev-server@0.4.1
+321 verbose unbuild rmStuff jspm-dev-server@0.4.1 from /home/akarnachuk/projects/arammeem/systemjs/node_modules
+322 silly gentlyRm /home/akarnachuk/projects/arammeem/systemjs/node_modules/.bin/jspm-dev-server is being gently removed
+323 silly gentlyRm verifying /home/akarnachuk/projects/arammeem/systemjs is an npm working directory
+324 silly gentlyRm containing path /home/akarnachuk/projects/arammeem/systemjs is under npm's control, in /home/akarnachuk/projects/arammeem/systemjs
+325 silly gentlyRm deletion target /home/akarnachuk/projects/arammeem/systemjs/node_modules/.bin/jspm-dev-server is under /home/akarnachuk/projects/arammeem/systemjs
+326 verbose gentlyRm vacuuming from /home/akarnachuk/projects/arammeem/systemjs/node_modules/.bin/jspm-dev-server up to /home/akarnachuk/projects/arammeem/systemjs
+327 info postuninstall jspm-dev-server@0.4.1
+328 silly gentlyRm /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server is being purged from base /home/akarnachuk/projects/arammeem/systemjs
+329 verbose gentlyRm don't care about contents; nuking /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+330 silly vacuum-fs purging /home/akarnachuk/projects/arammeem/systemjs/node_modules/jspm-dev-server
+331 silly vacuum-fs removing /home/akarnachuk/projects/arammeem/systemjs/node_modules
+332 silly vacuum-fs finished vacuuming up to /home/akarnachuk/projects/arammeem/systemjs
