@@ -1,10 +1,8 @@
-import app from './app';
-import angular from 'angular';
-import angularMaterial from 'angular-material';
-import ngRoute from 'angular-route';
+'use strict';
 
-import 'angular-material/angular-material.css';
+import app from "./app";
+import angular from "angular";
 
 angular.element(document).ready(function () {
-  angular.bootstrap(document, [app.name]);
+    angular.bootstrap(document, [app.name]);
 });
