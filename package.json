@@ -10,16 +10,21 @@
       "angular": "github:angular/bower-angular@^1.5.7",
       "angular-material": "github:angular/bower-material@^1.0.9",
       "angular-route": "github:angular/bower-angular-route@^1.5.7",
-      "jscs": "npm:jscs@^3.0.6",
-      "jscs-dev/node-jscs": "github:jscs-dev/node-jscs@^3.0.6",
       "lodash-node": "npm:lodash-node@^3.10.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4",
-      "jscs-dev/babel-jscs": "github:jscs-dev/babel-jscs@^2.0.5",
-      "jshint/jshint": "github:jshint/jshint@^2.9.2"
+      "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "devDependencies": {
+    "jscs": "^3.0.6",
+    "jshint": "^2.9.2",
+    "jspm": "^0.16.39"
+  },
+  "scripts": {
+    "postinstall": "jspm install",
+    "dev": "jspm bundle src/main --inject --watch && jspm-server"
   }
 }

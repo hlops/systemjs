@@ -21,6 +21,15 @@ System.config({
       "src/router.js",
       "github:angular/bower-angular-route@1.5.7.js",
       "github:angular/bower-angular-route@1.5.7/angular-route.js"
+    ],
+    "--watch": [
+      "src/main.js",
+      "github:angular/bower-angular@1.5.7.js",
+      "github:angular/bower-angular@1.5.7/angular.js",
+      "src/app.js",
+      "src/router.js",
+      "github:angular/bower-angular-route@1.5.7.js",
+      "github:angular/bower-angular-route@1.5.7/angular-route.js"
     ]
   },
 

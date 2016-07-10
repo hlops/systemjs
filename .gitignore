@@ -3,7 +3,7 @@ dist/
 .tmp/
 *.log
 *.map
-*.d.ts
+build.js
 
 # Typings
 # Only project-specific typings should be included
@@ -28,7 +28,7 @@ Desktop.ini
 
 # JetBrains IDEs
 *.iml
-.idea/
+.idea1/
 .webstorm/
 
 # OSX

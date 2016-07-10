@@ -15,6 +15,7 @@ sudo npm install jspm-server -g
 jspm init
 jspm install
 
-jspm bundle src/main --inject
+jspm bundle src/main --inject --development --watch
 
 npm install -g chokidar-socket-emitter
+
