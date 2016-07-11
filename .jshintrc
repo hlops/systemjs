@@ -3,6 +3,7 @@
     "esversion": "6",
     "globals": {
         "angular": false,
+        "document": false,
         "describe": false,
         "it": false,
         "expect": false,

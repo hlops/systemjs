@@ -3,8 +3,7 @@
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>
-    System.import('src/main')
-            .catch(console.error.bind(console));
+    System.import('src/bootstrap').catch(console.error.bind(console));
 </script>
-<ng-view></ng-view>
+<ng-include src="'src/app.html'"></ng-include>
 </html>

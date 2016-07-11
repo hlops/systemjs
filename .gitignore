@@ -4,6 +4,7 @@ dist/
 *.log
 *.map
 build.js
+-*.*
 
 # Typings
 # Only project-specific typings should be included

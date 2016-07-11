@@ -1,5 +1,4 @@
 'use strict';
-
 import app from './app';
 import angular from 'angular';
 
