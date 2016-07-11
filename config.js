@@ -20,6 +20,7 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
+    "less": "npm:systemjs-less-plugin@1.8.3",
     "lodash/lodash": "github:lodash/lodash@4.13.1",
     "github:angular/bower-angular-animate@1.5.7": {
       "angular": "github:angular/bower-angular@1.5.7"

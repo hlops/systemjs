@@ -10,6 +10,7 @@
       "angular": "github:angular/bower-angular@^1.5.7",
       "angular-material": "github:angular/bower-material@^1.0.9",
       "angular-route": "github:angular/bower-angular-route@^1.5.7",
+      "less": "npm:systemjs-less-plugin@^1.8.3",
       "lodash/lodash": "github:lodash/lodash@^4.13.1"
     },
     "devDependencies": {
